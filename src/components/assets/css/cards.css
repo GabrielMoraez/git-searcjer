@@ -73,3 +73,37 @@
 	color: #3498db;
 	cursor: pointer;
 }
+
+.forks-wrapper i, .followers-wrapper i {
+	font-size: 20px;
+	margin-right: 5px;
+}
+
+.repoStats{
+	margin-top: 10px;
+}
+
+.followers-wrapper {
+	font-weight: 700;
+	color: #ff9f43;
+	font-size: 15px;
+}
+
+.forks-wrapper {
+	font-weight: 700;
+	margin-right: 20px;
+	font-size: 15px;
+	color: #10ac84;
+}
+
+.followers-wrapper:hover, .followers-wrapper:active, .followers-wrapper:focus  {
+	color: #BF7732;
+	cursor: pointer;
+}
+
+.forks-wrapper:hover, .forks-wrapper:active, .forks-wrapper:focus  {
+	color: #0D5E49;
+	cursor: pointer;
+}
+
+

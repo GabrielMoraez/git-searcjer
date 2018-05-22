@@ -1,5 +1,4 @@
 import React from 'react';
-import {Icon, Button} from 'antd';
 import {Col, Row} from 'react-bootstrap';
 import './assets/css/cards.css';
 
@@ -7,12 +6,6 @@ import './assets/css/cards.css';
 
 class Cards extends React.Component {
   
-  constructor(props) {
-    super(props);
-  }
-
-
-
   render(){
     return (
       <div className="CardWrapper">
@@ -22,13 +15,13 @@ class Cards extends React.Component {
             <div className="InfoWrapper desc-wrapper">{this.props.repositoryDescription}</div>
 
             <div className="repoStats">
-              <div className="InfoWrapper forks-wrapper"><i class="fas fa-code-branch"></i>{this.props.forks}</div>
-              <div className="InfoWrapper followers-wrapper"><i class="fas fa-star"></i>{this.props.stars}</div>
+              <div className="InfoWrapper forks-wrapper"><i className="fas fa-code-branch"></i>{this.props.forks}</div>
+              <div className="InfoWrapper followers-wrapper"><i className="fas fa-star"></i>{this.props.stars}</div>
             </div>
           </Col>
 
           <Col md={2} className="userInfo">
-            <div className="InfoWrapper img-wrapper"><img src={this.props.photo} height="75" width="75" /> </div>
+            <div className="InfoWrapper img-wrapper"><img alt="" src={this.props.photo} height="75" width="75" /> </div>
             <div className="InfoWrapper username-wrapper">{this.props.username}</div>
           </Col>
 
