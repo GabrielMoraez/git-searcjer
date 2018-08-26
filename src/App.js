@@ -19,7 +19,7 @@ class Dashboard extends React.Component {
     )
     .then(response => {
       this.setState({repos: response.items});
-      console.log(this.state.repos);  
+      console.log(this.state.repos[1].owner.html_url);  
     });
   };
 
@@ -27,7 +27,7 @@ class Dashboard extends React.Component {
    return item.map((li, i) =>
       (<Cards key={li.id} username={li.owner.login} repositoryName={li.name}
         repositoryDescription={li.description} stars={li.watchers}
-        forks={li.forks} photo={li.owner.avatar_url} link={li.html_url}
+        forks={li.forks} photo={li.owner.avatar_url} link={li.html_url} ownerLink={li.owner.html_url}
         />)
    );
   }
