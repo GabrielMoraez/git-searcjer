@@ -18,7 +18,7 @@ $ npm --version
 ### How to Run
 
 ```
-git clone https://github.com/GabrielMoraez/git-searcher
+git clone (https://github.com/GabrielMoraez/git-searcher)
 cd git-searcher/
 npm install
 npm start
