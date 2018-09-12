@@ -12,6 +12,7 @@
     "extends": ["eslint:recommended", "plugin:react/recommended", "airbnb"],
     "plugins": ["react"],
     "rules": {
+      "react/forbid-prop-types": ["error", { "forbid": [] }],
       "indent": ["error", 2],
       "linebreak-style": ["error", "windows"],
       "semi": ["error","always"],

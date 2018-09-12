@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from '@material-ui/core/styles/withStyles';
 import TemplateHome from '../../templates/TemplateHome';
@@ -6,7 +6,7 @@ import TemplateHome from '../../templates/TemplateHome';
 import styles from './styles';
 
 
-class Home extends Component {
+class Home extends React.Component {
   render() {
     const { classes } = this.props;
 
@@ -22,7 +22,7 @@ class Home extends Component {
 
 
 Home.propTypes = {
-  classes: PropTypes.isRequired,
+  classes: PropTypes.object.isRequired,
 };
 
 
