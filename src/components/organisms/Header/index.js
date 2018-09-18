@@ -15,13 +15,13 @@ class Header extends React.Component {
 
     return (
       <div className={classes.root}>
-        <AppBar position='static'>
+        <AppBar position='static' className={classes.header}>
           <Toolbar>
             <Typography variant='title' color='inherit' className={classes.grow}>
-              <img src='../../../public/img/logo.png' alt='GITSEARCHER' />
+              <img src='../../../../img/logo.png' alt='GITSEARCHER' className={classes.logo} />
             </Typography>
-            <Button color='inherit'>ENTRAR</Button>
-            <Button color='inherit'>REGISTRAR</Button>
+            <Button className={classes.headerButton} color='inherit'>ENTRAR</Button>
+            <Button className={classes.headerButton} color='inherit'>REGISTRAR</Button>
           </Toolbar>
         </AppBar>
       </div>
