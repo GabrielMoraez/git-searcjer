@@ -11,6 +11,9 @@ const styles = () => ({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  searchWrapper: {
+    display: 'inline-flex'
+  }
 });
 
 export default styles;

@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import withStyles from '@material-ui/core/styles/withStyles';
 import TemplateHome from '../../templates/TemplateHome';
 
+import SearchBar from '../../atoms/SearchBar';
+import SearchButton from '../../atoms/SearchButton';
+
 import styles from './styles';
 
 
@@ -13,7 +16,10 @@ class Home extends React.Component {
     return (
       <TemplateHome>
         <div className={classes.body}>
-        a
+          <div className={classes.searchWrapper}>
+            <SearchBar />
+            <SearchButton />
+          </div>
         </div>
       </TemplateHome>
     );
