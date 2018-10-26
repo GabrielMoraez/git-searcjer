@@ -12,8 +12,8 @@ const styles = () => ({
     justifyContent: 'center',
   },
   searchWrapper: {
-    display: 'inline-flex'
-  }
+    display: 'inline-flex',
+  },
 });
 
 export default styles;
