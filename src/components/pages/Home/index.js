@@ -5,6 +5,7 @@ import TemplateHome from '../../templates/TemplateHome';
 
 import SearchBar from '../../atoms/SearchBar';
 import SearchButton from '../../atoms/SearchButton';
+import MainText from '../../atoms/MainText';
 
 import styles from './styles';
 
@@ -16,6 +17,9 @@ class Home extends React.Component {
     return (
       <TemplateHome>
         <div className={classes.body}>
+          <div className={classes.textWrapper}>
+            <MainText />
+          </div>
           <div className={classes.searchWrapper}>
             <SearchBar />
             <SearchButton />

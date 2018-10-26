@@ -19,6 +19,9 @@ const styles = {
   headerButton: {
     fontSize: 20,
   },
+  wrapper: {
+    padding: 25,
+  },
 };
 
 export default styles;

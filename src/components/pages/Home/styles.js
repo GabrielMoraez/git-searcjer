@@ -4,8 +4,8 @@ const styles = () => ({
     display: 'block', // Fix IE11 issue.
   },
   body: {
+    marginTop: '15%',
     position: 'relative',
-    marginTop: '6px',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
