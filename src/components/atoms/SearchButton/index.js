@@ -8,10 +8,11 @@ import styles from './styles';
 class SearchButton extends React.Component {
   render() {
     const { classes } = this.props;
+    const { onClick } = this.props;
 
     return (
       <div>
-        <Button className={classes.button}>
+        <Button className={classes.button} onClick={onClick}>
           LOOK UP
         </Button>
       </div>
@@ -21,6 +22,7 @@ class SearchButton extends React.Component {
 
 SearchButton.propTypes = {
   classes: PropTypes.object.isRequired,
+  onClick: PropTypes.any.isRequired,
 };
 
 export default withStyles(styles)(SearchButton);

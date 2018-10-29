@@ -8,11 +8,14 @@ import styles from './styles';
 class SearchBar extends React.Component {
   render() {
     const { classes } = this.props;
+    const { onChange, value } = this.props;
 
     return (
       <div>
         <Input
           className={classes.input}
+          onChange={onChange}
+          value={value}
           placeholder='Procure por nomes, tags e/ou donos dos repositórios'
         />
       </div>
@@ -22,6 +25,9 @@ class SearchBar extends React.Component {
 
 SearchBar.propTypes = {
   classes: PropTypes.object.isRequired,
+  onChange: PropTypes.any.isRequired,
+  value: PropTypes.any.isRequired,
 };
+
 
 export default withStyles(styles)(SearchBar);

@@ -9,8 +9,29 @@ import MainText from '../../atoms/MainText';
 
 import styles from './styles';
 
-
 class Home extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      inputValue: '',
+    };
+    this.changeInput = this.changeInput.bind(this);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  changeInput(evt) {
+    this.funcName = 'changeInput';
+    this.setState({
+      inputValue: evt.target.value,
+    });
+  }
+
+  handleClick() {
+    const { inputValue } = this.state;
+    this.funcName = 'handleClick';
+    alert(inputValue);
+  }
+
   render() {
     const { classes } = this.props;
 
@@ -21,8 +42,8 @@ class Home extends React.Component {
             <MainText />
           </div>
           <div className={classes.searchWrapper}>
-            <SearchBar />
-            <SearchButton />
+            <SearchBar onChange={evt => this.changeInput(evt)} />
+            <SearchButton onClick={() => this.handleClick()} />
           </div>
         </div>
       </TemplateHome>
