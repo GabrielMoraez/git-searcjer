@@ -14,8 +14,7 @@
     "rules": {
       "react/forbid-prop-types": ["error", { "forbid": [] }],
       "indent": ["error", 2],
-      "linebreak-style": ["error", "windows"],
-      "semi": ["error","always"],
+      "semi": ["error","never"],
       "jsx-quotes": ["error", "prefer-single"],
       "quotes": ["error", "single"],
       "max-len": ["error", { "code": 150 }],
